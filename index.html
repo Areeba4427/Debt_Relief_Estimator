@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Debt Saving Estimator</title>
+</head>
+
+<body>
+
+    <main class="debt_saving_estimator">
+        <h1 id="heading">Debt Saving Estimator</h1>
+        <div class="slider_section">
+            <div class="debt_section section">
+                <label>How much debt do you owe?</label>
+                <div class="inner_section">
+                    <div id="wrapper">
+                        <input type="range" value="25000" class='range' id="range1" min="7500" max="100000" step="2500">
+                        <div class="dialog-box" id="debt_slider_val">$25,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="interest_section section">
+                <label>What is your average interest rate?</label>
+                <div class="inner_section">
+                    <div id="wrapper">
+                        <input type="range" value="22" class='range' id="range2" min="10" max="30">
+                        <div class="dialog-box" id="rate_slider_value">22%</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="result_section ">
+            <section class="with_plan plans">
+                <h3 class="sub">Debt Relief with Complete Debt Relief</h3>
+                <div class="three_sec">
+                    <div class="with_plan_result1 flex_result">
+                        <label class="with_plan_result1_label lab">Months to Pay </label>
+                        <label class="with_plan_result1_span val">36</label>
+                    </div>
+                    <div class="with_plan_result2 flex_result">
+                        <label class="with_plan_result2_label lab">Interest Rate</label>
+                        <label class="with_plan_result2_span val">0%</label>
+                    </div>
+                    <div class="with_plan_result3 flex_result">
+                        <label class="with_plan_result3_label lab">Total Interest Paid</label>
+                        <label class="with_plan_result3_span val">$0.00</label>
+                    </div>
+                </div>
+                <div class="three_sec">
+                    <div class="with_plan_result4 flex_result">
+                        <label class="with_plan_result4_label lab">Monthly Payment</label>
+                        <label class="with_plan_result4_span val" id="monthly_payment1">$445</label>
+                    </div>
+                    <div class="with_plan_result5 flex_result">
+                        <label class="with_plan_result5_label lab">Total Cost</label>
+                        <label class="with_plan_result5_span val" id="total_cost">$16,000</label>
+                    </div>
+                    <div class="with_plan_result6 flex_result">
+                        <label class="with_plan_result6_label lab val_final_label two">TOTAL SAVINGS</label>
+                        <label class="with_plan_result6_span val val_final two" id="saving">$9,000</label>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="without_plan plans">
+                <h3 class="sub">Debt Consolidation
+                </h3>
+                <div class="three_sec">
+                    <div class="without_plan_result1 flex_result">
+                        <label class="without_plan_result1_label lab">Months to Pay</label>
+                        <label class="without_plan_result1_span val"><select id="monthsSelect">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                            <option value="48" selected>48</option>
+                            <option value="60">60</option>
+                            <option value="72">72</option>
+                          </select>
+                          </label>
+                    </div>
+
+                    <div class="without_plan_result2 flex_result">
+                        <label class="without_plan_result2_label lab">Interest Rate</label>
+                        <label class="without_plan_result2_span val" id="interest_rate2">22%</label>
+                    </div>
+                    <div class="without_plan_result3 flex_result">
+                        <label class="without_plan_result3_label lab">Total Interest Paid</label>
+                        <label class="without_plan_result3_span val" id="total_int">$12,808</label>
+                    </div>
+                </div>
+                <div class="three_sec">
+                    <div class="without_plan_result4 flex_result">
+                        <label class="without_plan_result4_label lab">Monthly Payment</label>
+                        <label class="without_plan_result4_span val" id="monthly_payment2">$788</label>
+                    </div>
+                    <div class="without_plan_result5 flex_result">
+                        <label class="without_plan_result5_label lab">Total Cost</label>
+                        <label class="without_plan_result5_span val" id="total_cost2">$37,808</label>
+                    </div>
+                    <div class="without_plan_result6 flex_result">
+                        <label class="without_plan_result6_label lab val_final_label two">YOU WILL PAY</label>
+                        <label class="without_plan_result6_span val val_final two" id="pay">$37,808</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="asset.js"></script>
+</body>
+
+</html>
